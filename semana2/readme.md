@@ -1,0 +1,3 @@
+usei o vizualizador de eventos do windows e deu vários resultados de nivel: nivel critico; fonte: kernel-power; identificação do evento: 41; categoria do evento: 63
+com a seguinte mensagem: O sistema foi reiniciado sem um desligamento correto primeiro. Esse erro pode ser causado quando o sistema para de responder, trava ou fica sem energia inesperadamente.
+fiz varios testes com placa de video, memoria ram e processador, esse erro pode ser a fonte ? ele liga e em segundos desliga e depois liga novamente e as vezes ele reinicia
