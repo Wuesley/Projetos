@@ -3,4 +3,5 @@
 * Depois as pastas filhos
 # 
 # Comoçando o controle de versão
-* Na pasta mãe digite: [git init], após isso todas as pastas dentro estarão rastreadas pelo git
+* Na pasta mãe digite: [git init], após isso todas as pastas dentro estarão rastreadas pelo git 
+* Após isso pode usar normalmente o git
