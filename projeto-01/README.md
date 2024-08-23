@@ -1,0 +1,1 @@
+# Aqui vao estar algumas dicas e detalhes de como fazer esse tipo de página

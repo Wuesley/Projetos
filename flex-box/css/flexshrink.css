@@ -1,0 +1,72 @@
+.container-row {
+    display: flex;
+    flex-direction: row;
+    width: 400px; /* Tamanho do contêiner reduzido */
+    height: 200px;
+    border: 2px solid black;
+  }
+  
+  /* Estilos comuns */
+  .box {
+    background-color: lightblue;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #333;
+    width: 200px; /* Tamanho inicial das caixas */
+    height: 100px;
+    margin: 5px;
+  }
+  
+  /* Controle do encolhimento de cada item */
+  .shrink-1 {
+    flex-shrink: 1;
+  }
+  
+  .shrink-2 {
+    flex-shrink: 2;
+  }
+  
+  .shrink-3 {
+    flex-shrink: 3;
+  }
+  
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  /*#####################################################################*/
+  .container-column {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px; /* Tamanho do contêiner reduzido */
+    border: 2px solid black;
+  }
+  
+  /* Estilos comuns */
+  .box2 {
+    background-color: lightgreen;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid #333;
+    width: 100%; /* Tamanho da largura igual ao contêiner */
+    height: 150px; /* Tamanho inicial das caixas */
+    margin: 5px;
+  }
+  
+  /* Controle do encolhimento de cada item */
+  .shrink-1 {
+    flex-shrink: 1;
+  }
+  
+  .shrink-2 {
+    flex-shrink: 2;
+  }
+  
+  .shrink-3 {
+    flex-shrink: 3;
+  }
+  
+  .shrink-0 {
+    flex-shrink: 0;
+  }
+  

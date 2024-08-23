@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <link rel="stylesheet" href="/flex-box/css/mediaQuery.css">
+
+    <!-- CONFIGURAÇÃO DE MEDIA QUERY-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Media Query</title>
+</head>
+<body>
+    <p><a href="./displayFlex.html"> voltar</a></p> 
+    <h2 class="alinhamento_de_itens2"><b>Media Query
+        é uma técnica que permite aplicar estilos específicos a diferentes tamanhos de tela, resoluções, ou outros aspectos do ambiente em que 
+        a página web está sendo visualizada. Ela é fundamental para criar layouts responsivos, ou seja, páginas que se ajustam a diferentes dispositivos,
+        como desktops, tablets e smartphones.
+    </b></h2>
+<p>
+    Primeiro ponto em que devemos nos atentar é na configuração da meta tag, basta digitar <b>meta: vp</b>  ela possibilita que o nosso site seja melhor visto
+    em varios outros dispositivos que se deseja ser adaptado. <br> <br> 
+</p>
+
+<p>
+    temos 3 modos:
+    <li>screen - quando quero apenas modificar a tela;</li> 
+    <li>print - quando o usuário quer imprimir a tela;</li> 
+    <li>speech - reconhecimento por voz do que ta na pagina;</li> 
+    <li>all - Abrange todas as resoluções. Normalmente usamos ele, ao inves de usar individualmente</li> <br>
+</p>
+
+<p>
+    A sintaxe básica de uma media query envolve o uso da regra @media, seguida de uma condição ou conjunto de condições. Quando essa condição é satisfeita, o conjunto
+    de estilos dentro da media query é aplicado.
+</p>
+<div class="caixadecodigo">
+    <img src="/flex-box/img/sintaxebasica.png" alt="">
+</div>
+
+    <p>
+    Exemplo Simples:
+    Vamos usar uma media query para alterar o layout de uma página quando a largura da janela for menor que 600 pixels (comum em dispositivos móveis).
+
+    <div class="exe1">
+        <img src="/flex-box/img/exe1.png" alt="">
+    </div>
+    
+    <h2 class="alinhamento_de_itens2">O padrão de desenvolvimento é começar pelo mobile primerio isso implica usar o (min-width ao inves de usar o max-width) a ordem de codar importa!</h2>
+    <p>
+    <mark>Como Funciona:</mark><br><br>
+    <mark>Estilos padrão:</mark><br> No exemplo acima, o corpo da página terá um fundo azul e um tamanho de fonte de 18px em qualquer tela que não corresponda à media query. <br><br>
+
+    <mark>Media query aplicada:</mark><br> Se a largura da janela do navegador for menor que 600px, o fundo muda para verde e o tamanho da fonte diminui para 16px. <br><br>
+    <mark>Tipos de Condições nas Media Queries:</mark><br><br>
+    <mark>Largura e Altura da Tela (width, height):</mark>
+
+   <h2 class="alinhamento_de_itens2">min-width: Aplica os estilos se a largura da tela for maior ou igual a um valor específico.</h2>
+   <h2 class="alinhamento_de_itens2">max-width: Aplica os estilos se a largura da tela for menor ou igual a um valor específico.</h2> 
+    </p>
+
+    <div class="exe2">
+        <img src="/flex-box/img/exe2.png" alt="">
+    </div>
+
+    <p>
+    <mark>Orientação da Tela (orientation):</mark><br><br>
+
+    <mark>landscape:</mark>    Aplica os estilos quando a tela estiver em modo paisagem (horizontal). <br>
+    <mark>portrait:</mark>   Aplica os estilos quando a tela estiver em modo retrato (vertical).
+
+    <div class="exe3">
+        <img src="/flex-box/img/exe3.png" alt="">
+    </div>
+    </p>
+
+    <p>
+    Resolução de Tela (resolution): <br>
+
+    Aplica os estilos dependendo da densidade de pixels do dispositivo.
+
+    <div class="exe4">
+        <img src="/flex-box/img/exe4.png" alt="">
+    </div>
+    </p>
+
+    <p>
+    Combinações de Condições: Você pode combinar várias condições usando operadores lógicos como and, not, e or. <br>
+    <div class="exe5">
+        <img src="/flex-box/img/exe5.png" alt="">
+    </div>
+    </p>
+
+
+    <p>
+    Exemplo de Layout Responsivo: <br>
+    Um layout responsivo típico pode usar várias media queries para ajustar o design em diferentes pontos de ruptura (breakpoints), por exemplo: <br>
+
+    <div class="exe6">
+        <img src="/flex-box/img/exe6.png" alt="">
+    </div>
+   
+    </p>
+</p>
+
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+<h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+</body>
+</html>

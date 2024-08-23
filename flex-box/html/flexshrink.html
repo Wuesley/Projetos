@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <link rel="stylesheet" href="/flex-box/css/flexshrink.css">
+
+    <title>flex-shrink</title>
+
+</head>
+<body>
+    <p><a href="./displayFlex.html"> voltar</a></p>
+    
+    <h2 class="alinhamento_de_itens2">
+    <b>
+        flex-shrink<p>controla quanto os itens flex devem encolher em relação aos outros itens quando o espaço disponível no contêiner é insuficiente.</p>
+    </b>
+    </h2>
+
+
+
+    <h2 class="alinhamento_de_itens2"><b>flex-shrink flow row</b></h2>
+    <p> 
+    o eixo principal é horizontal, e a propriedade flex-shrink será usada para controlar quanto cada item encolhe em relação aos outros itens quando o 
+    contêiner tem largura limitada. <br>
+    shrink-1: O item encolhe proporcionalmente em relação aos outros com base em um fator de 1. <br>
+    shrink-2: O item encolhe o dobro em relação ao item com flex-shrink: 1. <br>
+    shrink-3: O item encolhe o triplo em relação ao item com flex-shrink: 1. <br>
+    shrink-0: O item não encolhe e mantém seu tamanho original, mesmo se o contêiner for pequeno. <br>
+    </p>
+
+
+    <div class="container-row">
+        <div class="box shrink-1">Box 1 (flex-shrink: 1)</div>
+        <div class="box shrink-2">Box 2 (flex-shrink: 2)</div>
+        <div class="box shrink-3">Box 3 (flex-shrink: 3)</div>
+        <div class="box shrink-0">Box 4 (flex-shrink: 0)</div>
+    </div>
+      
+    <br><br><br><br><br><br><br><br>
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+
+
+    <h2 class="alinhamento_de_itens2"><b>flex-shrink flow column</b></h2>
+    <p>
+        o eixo principal é vertical, e a propriedade flex-shrink será usada para controlar quanto cada item encolhe em relação aos outros itens no eixo vertical
+        quando o contêiner tem altura limitada. <br>
+        shrink-1: O item encolhe proporcionalmente em relação aos outros com base em um fator de 1. <br>
+        shrink-2: O item encolhe o dobro em relação ao item com flex-shrink: 1. <br>
+        shrink-3: O item encolhe o triplo em relação ao item com flex-shrink: 1. <br>
+        shrink-0: O item não encolhe e mantém seu tamanho original, mesmo se o contêiner for pequeno. <br>
+    </p>
+
+    <div class="container-column">
+        <div class="box2 shrink-1">Box 1 (flex-shrink: 1)</div>
+        <div class="box2 shrink-2">Box 2 (flex-shrink: 2)</div>
+        <div class="box2 shrink-3">Box 3 (flex-shrink: 3)</div>
+        <div class="box2 shrink-0">Box 4 (flex-shrink: 0)</div>
+      </div>
+
+    <br><br><br><br><br><br><br><br><br>
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+
+
+
+
+    
+    <h2><b>flex-shrink flow row</b></h2>
+    <p>
+        faz o encolhimento/ajuste dos items caso tranbordem a div pai, esse ajuste é de forma igualitária, houve um overflow no 3, cada item tem 120px como temos 3 items
+        temos 360px
+    </p>
+    <div class="container" style="width: 300px; display:flex; flex-flow: row nowrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="width: 120px;flex-shrink: 0;">item 1</div>
+        <div class="item" style="width: 120px;flex-shrink: 0;">item 2 </div>
+        <div class="item" style="width: 120px;flex-shrink: 0;">item 3</div>
+    </div>
+    <p>
+    agora vamos solucionar usando o flex-shrink 1, o que ele esta fazendo é pegando os pixels excedentes, os que transbordaram, ele está dividindo o valor excedente pela 
+    quantidade de itens da linha 60px(overflow)/3 = 20px, esse resultado será distribuido para cada item fazendo com que eles se adaptem a largura da div pai/container  
+    </p>
+    <div class="container" style="width: 300px; display:flex; flex-flow: row nowrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="width: 120px;flex-shrink: 1;">item 1</div>
+        <div class="item" style="width: 120px;flex-shrink: 1;">item 2 </div>
+        <div class="item" style="width: 120px;flex-shrink: 1;">item 3</div>
+    </div>
+
+
+    <h2><b>flex-shrink flow column</b></h2>
+    <div class="container" style="height: 180px;width: 300px; display:flex; flex-flow: column nowrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="height: 80px;flex-shrink: 0;">item 1</div>
+        <div class="item" style="height: 80px;flex-shrink: 0;">item 2 </div>
+        <div class="item" style="height: 80px;flex-shrink: 0;">item 3</div>
+    </div>
+    <br><br><br><br><br>
+
+    <div class="container" style="height: 180px;width: 300px; display:flex; flex-flow: column nowrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="height: 80px;flex-shrink: 1;">item 1</div>
+        <div class="item" style="height: 80px;flex-shrink: 1;">item 2 </div>
+        <div class="item" style="height: 80px;flex-shrink: 1;">item 3</div>
+    </div>
+
+
+
+</body>
+</html>

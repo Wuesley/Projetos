@@ -1,0 +1,48 @@
+body{
+    background-color: aliceblue;
+}
+
+.caixadecodigo{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  
+    border:solid;
+}
+
+.exe1{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}
+
+.exe2{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}
+
+.exe3{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}
+
+.exe4{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}
+
+.exe5{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}
+
+.exe6{
+    display: flex;
+    justify-content: center;
+    border:solid;
+}   

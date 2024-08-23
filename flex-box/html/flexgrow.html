@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <link rel="stylesheet" href="/flex-box/css/flexgrow.css">
+    <title>flex-grow</title>
+
+</head>
+<body>
+    
+
+    <p><a href="./displayFlex.html"> voltar</a></p> 
+
+    <h2 class="alinhamento_de_itens2">
+        flex-grow<b>
+        <p>
+            permite que os itens flex cresçam para ocupar o espaço restante disponível no contêiner. O valor de flex-grow determina a proporção em que 
+            cada item deve crescer.
+         </p>
+    </b>
+    </h2>
+
+    <h2 class="alinhamento_de_itens2"><b>flex-grow fluxo row</b></h2>
+
+    <div class="container-row">
+        <div class="box grow-1">Box 1 (flex-grow: 1)</div>
+        <div class="box grow-2">Box 2 (flex-grow: 2)</div>
+        <div class="box grow-3">Box 3 (flex-grow: 3)</div>
+        <div class="box grow-0">Box 4 (flex-grow: 0)</div>
+      </div>
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+    <h2 class="alinhamento_de_itens2"><b>flex-grow fluxo row</b></h2>
+    <div class="container-row">
+        <div class="box2 grow-1">Box 1 (flex-grow: 1)</div>
+        <div class="box2 grow-2">Box 2 (flex-grow: 2)</div>
+        <div class="box2 grow-3">Box 3 (flex-grow: 3)</div>
+        <div class="box2 grow-0">Box 4 (flex-grow: 0)</div>
+      </div>
+
+   <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+
+<h2><b>flex-grow flow row</b></h2>
+
+    <p>
+        Cada item possui 100px, mas a div pai tem o tamanho de 400px por 400px,estamos justificando com espaços entre eles, então soborou 100px por padrão o flex-grow é 0
+        isso significa que não modificará os items se o colocarmos, como temos 100px disponivel podemos destinar a um dos itens, vamos colocar flex-grow 1, isso significa
+        que sera 100px/1 = 100px, colocamos no item 3
+    </p>
+    <div class="container" style="min-width: 400px; max-width: 400px; display:flex; flex-flow: row wrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="min-width: 100px;">item 1</div>
+        <div class="item" style="min-width: 100px;">item 2</div>
+        <div class="item" style="min-width: 100px; flex-grow: 1;">item 3</div>
+    </div>
+    <br>
+    <h2><b>flex-grow flow column</b></h2>
+    <div class="container" style="min-width: 400px; max-width: 400px; display:flex; flex-flow: column wrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="min-width: 100px;">item 1</div>
+        <div class="item" style="min-width: 100px;">item 2</div>
+        <div class="item" style="min-width: 100px; flex-grow: 1;">item 3</div>
+    </div>
+    <br>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

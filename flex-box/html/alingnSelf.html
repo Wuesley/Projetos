@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <link rel="stylesheet" href="/flex-box/css/alignself.css">
+    <title>Alingn Self</title>
+</head>
+<body>
+    <p><a href="./displayFlex.html"> voltar</a></p> 
+    <li class="alinhamento_de_itens3">align-self: Alinha um item individualmente.
+        Permite ajustar o alinhamento de um único item dentro do contêiner, substituindo o valor de align-items para aquele item específico.
+    </li><br>
+
+   
+    <h2 class="alinhamento_de_itens2"><b>Align-self: fluxo row</b></h2>
+
+    <div class="container-row">
+        <div class="box align-self-start">Box 1</div>
+        <div class="box align-self-center">Box 2</div>
+        <div class="box align-self-end">Box 3</div>
+        <div class="box align-self-stretch">Box 4</div>
+        <div class="box align-self-baseline">Box 5</div>
+      </div>
+
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+    <h2 class="alinhamento_de_itens2"><b>Align-self: fluxo column</b></h2>
+
+    <div class="container-column">
+        <div class="box2 align-self-start">Box 1</div>
+        <div class="box2 align-self-center">Box 2</div>
+        <div class="box2 align-self-end">Box 3</div>
+        <div class="box2 align-self-stretch">Box 4</div>
+        <div class="box2 align-self-baseline">Box 5</div>
+      </div>
+    <br><br><br><br><br><br><br><br><br>
+    
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+    
+    <h2 class="alinhamento_de_itens3"><b>Alin-self: stretch flow row</b></h2>
+    <div class="container" style="min-height: 60px;max-width: 160px; display:flex; flex-flow: row wrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="order: 2;">item 1</div>
+        <div class="item" style="order: 1;">item 2</div>
+        <div class="item" style="order: -2;">item 3</div>
+        <div class="item" style="order: 0;min-height: 60px;">item 4</div>
+        <div class="item" style="order: -1; align-self: stretch;">item 5</div>
+    </div>
+    <br>
+
+    <h2><b>Alin-self: stretch flow column</b></h2>
+    <div class="container" style="min-height: 60px;max-width: 60px; display:flex; flex-flow: column wrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="order: 2;">item 1</div>
+        <div class="item" style="order: 1;">item 2</div>
+        <div class="item" style="order: -2;">item 3</div>
+        <div class="item" style="order: 0;min-height: 60px;">item 4</div>
+        <div class="item" style="order: -1; align-self: stretch;">item 5</div>
+    </div>
+    <br>
+
+</body>
+</html>

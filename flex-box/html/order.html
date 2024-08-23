@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <link rel="stylesheet" href="/flex-box/css/order.css">
+    <title>Document</title>
+</head>
+<body>
+    <p><a href="./displayFlex.html"> voltar</a></p> 
+
+
+    <h2 class="alinhamento_de_itens2">
+        <b>
+        order:
+        <p>
+            Define a ordem em que os itens flex são exibidos dentro do contêiner flex. O valor padrão é 0, mas você pode usar valores positivos ou
+            negativos para reordenar os itens sem alterar o HTML.
+        </b>
+        </p>
+    </h2>
+
+    <h2 class="alinhamento_de_itens2"><b>order: fluxo row</b></h2>
+    <p>
+    O eixo principal é horizontal, e vamos usar a propriedade order para modificar a sequência de exibição dos itens.
+    Como Funciona:
+    order-3: O item será exibido na terceira posição.
+    order-1: O item será exibido na primeira posição.
+    order-4: O item será exibido na quarta posição.
+    order-2: O item será exibido na segunda posição.
+    </p>
+
+
+    <div class="container-row">
+        <div class="box order-3">Box 1 (order: 3)</div>
+        <div class="box order-1">Box 2 (order: 1)</div>
+        <div class="box order-4">Box 3 (order: 4)</div>
+        <div class="box order-2">Box 4 (order: 2)</div>
+      </div>
+      
+    <h2 class="alinhamento_de_itens2">###########################################################################</h2>
+
+    <h2 class="alinhamento_de_itens2"><b>order: fluxo column</b></h2>
+    <p>
+    O eixo principal é vrtical, e vamos usar a propriedade order para modificar a sequência de exibição dos itens.
+    Como Funciona:
+    order-3: O item será exibido na terceira posição.
+    order-1: O item será exibido na primeira posição.
+    order-4: O item será exibido na quarta posição.
+    order-2: O item será exibido na segunda posição.
+    </p>
+
+
+    <div class="container-column">
+        <div class="box2 order-3">Box 1 (order: 3)</div>
+        <div class="box2 order-1">Box 2 (order: 1)</div>
+        <div class="box2 order-4">Box 3 (order: 4)</div>
+        <div class="box2 order-2">Box 4 (order: 2)</div>
+    </div>
+      
+    <p>
+    Explicação:
+    A propriedade order altera a ordem de exibição dos itens no contêiner flex. O valor padrão é 0, mas você pode atribuir valores positivos ou negativos para reordenar os itens. <br>
+    Ao usar order, você não precisa alterar a estrutura HTML. A ordem dos itens é controlada apenas via CSS. <br>
+    Esta propriedade funciona tanto para layouts horizontais (row) quanto para layouts verticais (column), oferecendo flexibilidade no posicionamento dos elementos sem modificar a marcação. <br>
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2><b>Order(é a ordem dos itens dentro da div pai em ordem crecente) fluxo row</b></h2>
+    <div class="container" style="min-height: 140px;max-width: 160px; display:flex; flex-flow: row wrap; justify-content: space-between;align-items: center; align-content:space-around;">
+        <div class="item" style="order: 2;">item 1</div>
+        <div class="item" style="order: 1;">item 2</div>
+        <div class="item" style="order: -2;">item 3</div>
+        <div class="item" style="order: 0;">item 4</div>
+        <div class="item" style="order: -1;">item 5</div>
+    </div>
+    <br>
+
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+/*usando font do google*/
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Bungee+Spice&family=Honk&display=swap');
+
+body{
+    background-color:rgb(252, 255, 253);
+}
+
+
+.container{
+    border:solid 5px red;
+    padding: 5px;
+}
+
+.item{
+    border:solid 3px blue;
+}
+
+h1{
+    font-family: "Honk", system-ui;
+    font-size: 90px; /* Define o tamanho da fonte em pixels */
+
+}
+
+h2{
+    font-family: "Honk", system-ui;
+    font-size: 40px; /* Define o tamanho da fonte em pixels */
+  
+}
+.subtitulo{
+    background-image: linear-gradient(red, yellow);
+}
+
+p{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size: 25px; /* Define o tamanho da fonte em pixels */
+}
+
+li{
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    font-size: 25px; /* Define o tamanho da fonte em pixels */
+}
+
+.alinhamento_de_itens1{
+    background-image: conic-gradient(red, yellow, green, rgba(0, 217, 255, 0.945), rgb(163, 14, 201));
+}
+
+.alinhamento_de_itens2{
+    background-image: radial-gradient(circle, rgb(250, 19, 231), yellow, rgb(35, 245, 35));
+}
+
+.alinhamento_de_itens3{
+    background-image: radial-gradient(circle, red, rgb(255, 9, 103), rgb(77, 0, 128));
+}
+
+.alinhamento_de_itens4{
+    background-image: conic-gradient(red, yellow, green);
+}
+
+/*##########################################################################################*/
+.container-row {
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+    height: 200px;
+    border: 2px solid black;
+  }
+  
+  /* Exemplo de alinhamento flex-start (alinhado ao topo) */
+  .container-row.align-start {
+    align-items: flex-start;
+  }
+  
+  /* Exemplo de alinhamento center (centralizado verticalmente) */
+  .container-row.align-center {
+    align-items: center;
+  }
+  
+  /* Exemplo de alinhamento flex-end (alinhado ao fundo) */
+  .container-row.align-end {
+    align-items: flex-end;
+  }
+  
+  /* Exemplo de alinhamento stretch (esticado verticalmente) */
+  .container-row.align-stretch {
+    align-items: stretch;
+  }
+  
+  /* Exemplo de alinhamento baseline (alinhado à linha de base do texto) */
+.container-row.align-baseline {
+    align-items: baseline;
+  }
+
+  .box1 {
+    background-color: lightblue;
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  
+
+/*#####################################################################################*/
+.container-column {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+  }
+  
+  /* Exemplo de alinhamento flex-start (alinhado à esquerda) */
+  .container-column.align-start {
+    align-items: flex-start;
+  }
+  
+  /* Exemplo de alinhamento center (centralizado horizontalmente) */
+  .container-column.align-center {
+    align-items: center;
+  }
+  
+  /* Exemplo de alinhamento flex-end (alinhado à direita) */
+  .container-column.align-end {
+    align-items: flex-end;
+  }
+  
+  /* Exemplo de alinhamento stretch (esticado horizontalmente) */
+  .container-column.align-stretch {
+    align-items: stretch;
+  }
+  
+/* Exemplo de alinhamento baseline (alinhado à linha de base do texto) */
+.container-column.align-baseline {
+    align-items: baseline;
+  }
+
+  .box2 {
+    background-color: lightgreen;
+    padding: 10px;
+    border: 1px solid #333;
+  }
+  

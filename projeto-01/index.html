@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevClub refri</title>
+</head>
+<body>
+
+    <main><!-- tag principal onde tudo vai ficar -->
+        <!-- 
+        Vamos fazer uma tansição de tela, a tela ativa é a primeira quando o usuário usar as setas para ir para a proxima a segunda tela aparece, por isso vamos chamar de 
+        "active" com o javascript vamos mudar o ativo para outra div e consequentemente mostra a proxima página
+        -->
+        <div class="item active" style="--background: #EA3D41"><!-- esse (--) é como se estivessemos criando uma variável, mas só assim nao funciona precisamos ajustar o backgrouns no CSS -->
+            <div class="title">Morango</div>
+            <img src="./imagens/Morango-refrigerante-foregroundBlur.png" class="fruit">
+            <img src="./imagens/Morango-refrigerante.png" class=" refri">
+        </div>
+
+        <div class="item " style="--background: #2D5643">
+            <div class="title">Abacate</div>
+            <img src="./imagens/Abacate-refrigerante-foregroundBlur.png" class="fruit">
+            <img src="./imagens/Abacate-refrigerante.png" class=" refri">
+        </div>
+
+        <div class="item hidden " style="--background: #E7A043">
+            <div class="title">Laranja</div>
+            <img src="./imagens/Laranja-refrigerante-foregroundBlur.png" class="fruit">
+            <img src="./imagens/Laranja-refrigerante.png" class=" refri">
+        </div>
+
+        <!-- Vamos criar as setas da pagina -->
+
+        <div class="arrow">
+            <button id="prev"> < </button>
+            <button id="next"> > </button>
+        </div>
+
+
+
+
+    </main>
+
+</body>
+<script src="./script.js"></script>
+</html>

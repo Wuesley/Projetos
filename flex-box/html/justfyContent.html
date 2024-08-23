@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <title>justfy Content</title>
+    
+</head>
+<body>
+
+    <h2 class="subtitulo">Alinhamento de itens dentro do container</h2>
+    <!-- ########################################################################################################################################## -->
+        <p><a href="./displayFlex.html"> voltar</a></p> 
+        <p>
+            <ul>
+                <li class="alinhamento_de_itens1">justify-content: Alinha os itens no eixo principal. Controla o alinhamento dos itens ao longo do eixo principal 
+                    (que pode ser horizontal ou vertical, dependendo do valor de flex-direction). 
+                    <ul><br>
+                        <li>flex-start: Alinha os itens no início do contêiner.</li>
+                        <li>flex-end: Alinha os itens no final do contêiner.</li>
+                        <li>center: Alinha os itens no centro do contêiner.</li>
+                        <li>space-between: Distribui os itens uniformemente, com o primeiro item no início e o último no final do contêiner.</li>
+                        <li>space-around: Distribui os itens com espaços iguais ao redor deles.</li>
+                        <li>space-evenly: Distribui os itens com espaços iguais entre eles e também entre os itens e as bordas do contêiner.</li>
+                    </ul>
+                </li> <br>
+
+
+                <h2 class="alinhamento_de_itens1" style="height: 150px;">justify-content no fluxo flex-flow: row nowrap;</h2>
+                <!-- ########################################################################################################################################## -->
+                
+                    <h2><b>justify-content: flex-start;</b></h2>
+                    <p>Alinha os itens no início do contêiner.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap; justify-content:flex-start;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-end</b></h2>
+                   <p>Alinha os itens no final do contêiner.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap;justify-content:flex-end;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-center</b></h2>
+                    <p>Alinha os itens no centro do contêiner.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap;justify-content: center;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: space-between;</b></h2>
+                    <p>Distribui os itens uniformemente, com o primeiro item no início e o último no final do contêiner.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap;justify-content: space-between;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-around;</b></h2>
+                    <p>Distribui os itens com espaços iguais ao redor deles.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap;justify-content: space-around;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-evenly;</b></h2>
+                    <p>Distribui os itens com espaços iguais entre eles e também entre os itens e as bordas do contêiner.</p>
+                    <div class="container" style="max-height: 80px; display: flex; flex-flow: row nowrap;justify-content: space-evenly;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                
+                <!-- ########################################################################################################################################## -->
+                <!-- ########################################################################################################################################## -->
+                    <h2 class="alinhamento_de_itens1">no fluxo row wrap</h2>
+                <!-- ########################################################################################################################################## -->
+                
+                
+                    <h2><b>justify-content: flex-start;</b></h2>
+                    <p>Alinha os itens no início do contêiner.</p>
+                    <div class="container" style="max-width: 200px; display: flex; flex-flow: row wrap; justify-content:flex-start;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-end</b></h2>
+                    <p>Alinha os itens no final do contêiner.</p>
+                    <div class="container" style="max-width: 200px;; display: flex; flex-flow: row wrap;justify-content:flex-end;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-center</b></h2>
+                    <p>Alinha os itens no centro do contêiner.</p>
+                    <div class="container" style="max-width: 200px; display: flex; flex-flow: row wrap;justify-content: center;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: space-between;</b></h2>
+                    <p>Distribui os itens uniformemente, com o primeiro item no início e o último no final do contêiner.</p>
+                    <div class="container" style=" display: flex; flex-flow: row wrap;justify-content: space-between;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-around;</b></h2>
+                    <p>Distribui os itens com espaços iguais ao redor deles.</p>
+                    <div class="container" style="display: flex; flex-flow: row wrap;justify-content: space-around;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-evenly;</b></h2>
+                    <p>Distribui os itens com espaços iguais entre eles e também entre os itens e as bordas do contêiner.</p>
+                        <div class="container" style="display: flex; flex-flow: row wrap;justify-content: space-between;">
+                            <div class="item">item 1</div>
+                            <div class="item">item 2</div>
+                            <div class="item">item 3</div>
+                            <div class="item">item 4</div>
+                            <div class="item">item 5</div>
+                        </div>
+                  
+                
+                
+                
+                    
+                <!-- ########################################################################################################################################## -->
+                    <h2 class="alinhamento_de_itens1">no fluxo column wrap</h2>
+                <!-- ########################################################################################################################################## -->
+                
+                    <h2><b>justify-content: flex-start;</b></h2>
+                    <p>Alinha os itens no início do contêiner.</p>
+                    <div class="container" style="max-height: 100px;min-height: 100px; display: flex; flex-flow: column wrap;justify-content: flex-start;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 30px 0px 30px 0px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: flex-end;</b></h2>
+                    <p>Alinha os itens no final do contêiner.</p>
+                    <div class="container" style="max-height: 100px;min-height: 100px; display: flex; flex-flow: column wrap;justify-content: flex-end;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 30px 0px 30px 0px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: flex-center;</b></h2>
+                    <p>Alinha os itens no centro do contêiner.</p>
+                    <div class="container" style="max-height: 100px;min-height: 80px; display: flex; flex-flow: column wrap;justify-content: center;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 30px 0px 30px 0px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: space-between;</b></h2>
+                    <p>Distribui os itens uniformemente, com o primeiro item no início e o último no final do contêiner.</p>
+                    <div class="container" style="max-height: 100px;min-height: 80px; display: flex; flex-flow: column wrap;justify-content:space-between;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 30px 0px 30px 0px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: space-around;</b></h2>
+                    <p>Distribui os itens com espaços iguais ao redor deles.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column wrap;justify-content: space-around;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-evenly;</b></h2>
+                    <p>Distribui os itens com espaços iguais entre eles e também entre os itens e as bordas do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column wrap;justify-content: space-evenly;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 20px 20px 20px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                
+                
+                    <h2 class="alinhamento_de_itens1">no fluxo column nowrap</h2>
+                
+                    <h2><b>justify-content: flex-start;</b></h2>
+                    <p>Alinha os itens no início do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap; justify-content:flex-start;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-end</b></h2>
+                    <p>Alinha os itens no final do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap;justify-content:flex-end;">
+                        <div class="item">item 1</div>
+                        <div class="item" style="padding: 0px 20px 0px 20px">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                        <div class="item">item 5</div>
+                        <div class="item">item 6</div>
+                        <div class="item">item 7</div>
+                        <div class="item">item 8</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content:flex-center</b></h2>
+                    <p>Alinha os itens no centro do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap;justify-content: center;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                    </div>
+                    <br>
+                
+                    <h2><b>justify-content: space-between;</b></h2>
+                    <p>Distribui os itens uniformemente, com o primeiro item no início e o último no final do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap;justify-content: space-between;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-around;</b></h2>
+                    <p>Distribui os itens com espaços iguais ao redor deles.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap;justify-content: space-around;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>
+                    </div>
+                
+                    <h2><b>justify-content: space-evenly;</b></h2>
+                    <p>Distribui os itens com espaços iguais entre eles e também entre os itens e as bordas do contêiner.</p>
+                    <div class="container" style="min-height: 140px; display: flex; flex-flow: column nowrap;justify-content: space-evenly;">
+                        <div class="item">item 1</div>
+                        <div class="item">item 2</div>
+                        <div class="item">item 3</div>
+                        <div class="item">item 4</div>>
+                    </div>
+                    <br><br><br><br><br>
+                <!-- ########################################################################################################################################## -->
+                <!-- ########################################################################################################################################## -->
+                <!-- ########################################################################################################################################## -->
+</body>
+</html>

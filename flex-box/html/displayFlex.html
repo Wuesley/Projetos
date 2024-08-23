@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/flex-box/css/style.css">
+    <title>Display Flex (propriedades)</title>
+
+</head>
+<body>
+
+    <h1><b><mark>CSS FLEXBOX (FLEX CONTAINER)</mark></b></h1>
+    <h2>display flex</h2>
+    <p>
+       Quando colocamos no <mark>display: flex;</mark> Ele ativa o layout flexbox para o contêiner, permitindo que seus filhos (itens flex) sejam alinhados de acordo 
+       com o modelo flexbox. <br>Vamos aplicar as propriedades direto no style das div no html <a href="./index.html">voltar para a pagina principal</a>
+    </p>
+
+    <br><br>
+
+    <h2 class="subtitulo"><b>Flex direction</b></h2>
+    <p>Define a direção dos itens flex dentro do contêiner (pai).  Valores comuns:
+        <ul>
+            <li><mark>row(padrão)</mark></li>
+            <li><mark>row-reverse</mark></li>
+            <li><mark>column</mark></li>
+            <li><mark>column-reverse</mark></li>
+        </ul>
+    </p>
+
+    <h2><b>Flex direction: row; (padrão)</b></h2>
+    <p>Alinha os itens horizontalmente (da esquerda para a direita).</p>
+    <div class="container" style="display: flex; flex-direction: row;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+    <h2><b>Flex direction: row-reverse;</b></h2>
+    <p>Alinha os itens horizontalmente, mas da direita para a esquerda.</p>
+    <div class="container" style="display: flex;flex-direction: row-reverse;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+    <h2><b>Flex direction: column;</b></h2>
+    <p>Alinha os itens verticalmente (de cima para baixo).</p>
+    <div class="container" style="display: flex;flex-direction: column;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+
+    <h2><b>Flex direction: column-reverse;</b></h2>
+    <p>Alinha os itens verticalmente, mas de baixo para cima.</p>
+    <div class="container" style="display: flex;flex-direction: column-reverse;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+
+    <h2 class="subtitulo"><b>Flex-wrap</b></h2>
+    <p>
+    Controla se os itens flex podem quebrar para a próxima linha, caso o contêiner não tenha espaço suficiente. Estamos usando o <mark>flex-direction: row (padrão)</mark>
+    o row[nao precisa colocar, pois ele é por padrão nowrap]
+    </p>
+
+    <h2><b>Flex-wrap: nowrap;</b></h2>
+    <p>Todos os itens permanecem em uma única linha, sem quebrar.</p>
+
+    <div class="container" style="max-width: 200px; display: flex; flex-direction: row; flex-wrap: nowrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <h2><b>Flex-wrap: wrap;</b></h2>
+    <p>Os itens quebram em múltiplas linhas, se necessário.</p>
+    <div class="container" style="max-width: 200px; display: flex; flex-direction: row; flex-wrap: wrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <h2><b>Flex-wrap: wrap-reverse;</b></h2>
+    <p>Os itens quebram em múltiplas linhas, mas a linha final fica no topo.</p>
+
+    <div class="container" style="max-width: 200px; display: flex; flex-direction: row; flex-wrap: wrap-reverse;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <h2 class="subtitulo">Vamos aplicar Flex-wrap:(nowrap, wrap e wrap-reverse) com flex-direction: column</h2>
+    <h2><b>Flex-wrap: nowrap;</b></h2>
+    <div class="container" style="max-height: 150px; display: flex; flex-direction: column; flex-wrap: nowrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+    <br><br>
+    
+    <h2><b>Flex-wrap: wrap;</b></h2>
+    <div class="container" style="max-height: 150px; display: flex; flex-direction: column; flex-wrap: wrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+
+    <h2><b>Flex-wrap: wrap-reverse;</b></h2>
+    <div class="container" style="max-height: 150px; display: flex; flex-direction: column; flex-wrap: wrap-reverse;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+    <br><br><br><br><br><br>
+
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+
+    <h2 class="subtitulo">Flex-flow</h2>
+    <p> 
+    é uma abreviação que combina duas outras propriedades do Flexbox, flex-direction e flex-wrap. Ela é usada para definir 
+    tanto a direção do fluxo de itens flexíveis quanto se os itens devem ser dispostos em múltiplas linhas. <br> 
+    <mark>sintaxe: flex-flow: [flex-direction] + [flex-wrap];</mark> pode se usar: 
+   
+    <ul>
+        <li>Horizontal sem quebra - flex-flow: row nowrap;</li>
+        <li>Horizontal com quebra - flex-flow: row wrap;</li>
+        <li>Vertical sem quebra - flex-flow: column nowrap;</li>
+        <li>Vertical com quebra - flex-flow: column wrap;</li>
+    </ul>
+    </p>
+    
+    <h2><b> flex-flow: row nowrap;</b></h2>
+    <p>Os itens serão dispostos em uma única linha, da esquerda para a direita, sem quebra.</p>
+    <div class="container" style="max-height: 150px; display: flex; flex-flow: row nowrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+        <div class="item">item 5</div>
+        <div class="item">item 6</div>
+        <div class="item">item 7</div>
+        <div class="item">item 8</div>
+    </div>
+    <br>
+
+    <h2><b> Flex-flow: row wrap</b></h2>
+    <p>Os itens serão dispostos em uma linha, mas podem quebrar para uma nova linha se não couberem.</p>
+    <div class="container" style="max-width: 80px; display: flex; flex-flow: row wrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br>
+
+   
+    <h2><b> flex-flow: column nowrap;</b></h2>
+    <p>Os itens serão dispostos em uma linha, mas podem quebrar para uma nova linha se não couberem.</p>
+    <div class="container" style="max-width: 80px; display: flex; flex-flow: column nowrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br>
+    
+
+    
+    <h2><b>Flex-flow: column wrap;</b></h2>
+    <p>Os itens serão dispostos em uma coluna, mas podem quebrar para novas colunas se necessário.</p>
+    <div class="container" style="max-height: 80px; margin-right:auto; display: flex; flex-flow: column wrap;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br>
+
+
+    <h2><b> Flex-flow: column wrap-reverse</b></h2>
+    <p>Os itens serão dispostos em uma coluna, mas podem quebrar para novas colunas se necessário.</p>
+    <div class="container" style="max-height: 80px; display: flex; flex-flow: column wrap-reverse;">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+        <div class="item">item 3</div>
+        <div class="item">item 4</div>
+    </div>
+    <br>
+    <br><br><br><br><br><br>
+
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+<!-- ########################################################################################################################################## -->
+
+
+    <h2 class="subtitulo">Alinhamento de itens dentro do container</h2>
+<!-- ########################################################################################################################################## -->
+
+    <p>
+        
+        <ul>
+            <li>justify-content: alinhamento horizontal <a href="./justfyContent.html"> Aqui</a> </li>
+            <li>align-items :  alinhamento vertical <a href="./alingnItens.html"> Aqui</a></li>
+            <li>align-self <a href="./alingnSelf.html"> Aqui</a></li>
+            <li>align-content <a href="./alignContent.html"> Aqui</a></li>
+            <li>flexgrow<a href="./flexgrow.html"> Aqui</a></li>
+            <li>flex-shrink<a href="./flexshrink.html"> Aqui</a></li>
+            <li>flex-basis<a href="./flexBasis.html"> Aqui</a></li>
+            <li>order<a href="./order.html"> Aqui</a></li>
+            <li>Media query<a href="./MediaQuery.html"> Aqui</a></li>
+        </ul>
+                
+    <br><br><br>
+
+</body>
+</html>
